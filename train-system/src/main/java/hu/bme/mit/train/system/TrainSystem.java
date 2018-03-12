@@ -33,6 +33,7 @@ public class TrainSystem {
         TimerTask tt = new TimerTask() {
             @Override
             public void run() {
+                controller.setJoystickPosition(2);
                 controller.followSpeed();
                 System.out.println(controller.getReferenceSpeed());
             }
